@@ -1,9 +1,10 @@
-@font-face {font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:block;src:url(../webfonts/fa-solid-900.eot);src:url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.woff) format("woff"),url(../webfonts/fa-solid-900.ttf) format("truetype"),url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Fonte Awesome 5 grátis";font-weight:900}
+
 
 
 body{
     background-color: black;
     color: white;
+    font-family: var(--fonte-arial);
 }
 .sidebar{
     position: fixed;
@@ -12,7 +13,6 @@ body{
     bottom: 0px;
     padding: 12px;
     width: 300px;
-    font-family: Arial, Helvetica, sans-serif;
     
 
 }
@@ -20,7 +20,7 @@ body{
     background-color: #121212;
     border-radius: 8px;
     padding: 16px 0 0 16px;
-    height: 220px;
+
 }
 .sidebar_navegation .logo{
     background-color: #121212;
@@ -39,12 +39,15 @@ body{
 }
 .sidebar li{
     padding: 10px 0px;
+    text-decoration: none;
+    list-style: none;
 }
 .sidebar nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
     font-size: 14;
+    list-style: none;
     
     
 }
@@ -64,7 +67,7 @@ body{
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 .library .library_content{
     display: flex;
@@ -86,7 +89,6 @@ body{
     
 }
 .library .libary_buttom .fa{
-    font-family: 20px;
     margin-right: 10px;
     font-weight: 300;
     padding-right: 8px;
@@ -137,7 +139,6 @@ body{
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -170,4 +171,42 @@ body{
     padding: 8px;
     border-radius: 20px;
     
+}
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
